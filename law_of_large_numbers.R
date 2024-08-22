@@ -17,4 +17,10 @@ results <- sapply(sample_sizes, simulate_mean)
 
 data.frame(Sample_Sizes = sample_sizes, Sample_Mean = results)
 
+# Plot results
+plot(log10(sample_sizes), results, type = "b"
+     )
+
+# This demonstration shows that larger samples give us better estimates 
+# of the true average, which is the main idea behind the Law of Large Numbers.
 
